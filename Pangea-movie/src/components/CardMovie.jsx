@@ -1,6 +1,7 @@
 
 import React from "react";
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 const CardMovie = ({ movie }) => {
     const IMAGE_PATH = 'https://image.tmdb.org/t/p/w500/';
@@ -13,7 +14,9 @@ const CardMovie = ({ movie }) => {
                 <div className='movie-placeholder'>No hay Imagen</div>
             )}
             <h5 className="movie-title">{movie.title}</h5>
-            <Button variant="contained">ENTRAR</Button>
+            <Link to={`/movie/${movie.id}`}>
+                <Button variant="contained">ENTRAR</Button>
+            </Link>
         </div>
     );
 };
