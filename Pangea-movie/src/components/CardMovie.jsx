@@ -13,8 +13,8 @@ const CardMovie = ({ movie }) => {
             ) : (
                 <div className='movie-placeholder'>No hay Imagen</div>
             )}
-            <h5 className="movie-title">{movie.title}</h5>
-            <Link to={`/movie/${movie.id}`}>
+            <h2 className="movie-title">{movie.title}</h2>
+            <Link to={`/movie/${movie.id}`}> {/*linkea la ruta*/}
                 <Button variant="contained">ENTRAR</Button>
             </Link>
         </div>

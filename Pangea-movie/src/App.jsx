@@ -6,7 +6,6 @@ import Home from './components/Home';
 function App() {
   return (
     <div>
-      <h1>PANGEA</h1>
       <Home />
     </div>
   );

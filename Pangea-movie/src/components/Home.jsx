@@ -70,12 +70,10 @@ function Home() {
     };
 
     return (
-        <div className='container-header'>
+
+        <div>
             <Header onSearch={handleSearch} setSelectedGenre={handleGenreChange} />
-
             <div className='container'>
-
-
                 {renderMovies()}
             </div>
         </div>
