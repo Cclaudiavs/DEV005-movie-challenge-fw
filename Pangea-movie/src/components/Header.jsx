@@ -56,7 +56,7 @@ const Header = ({ onSearch, setSelectedGenre: setSelectedGenreProp }) => {
                     </select>
                 </div>
                 <div className="contVolver">
-                    <button className="volver" onClick={handleHomeClick}>
+                    <button className="volver" name='Home' onClick={handleHomeClick}>
                         <HomeIcon />
                     </button>
                 </div>
